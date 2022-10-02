@@ -32,7 +32,7 @@ const HomePage = (props) => {
           <Box
             className="relative pt-32 pb-112 px-16 sm:pt-80 sm:pb-192 sm:px-64 overflow-hidden"
             sx={{
-              background: `linear-gradient(0deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://mickey-fitness.s3.us-west-1.amazonaws.com/pages/home/banner.jpeg")`,
+              background: `linear-gradient(0deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://cash-homes-today.s3.us-west-2.amazonaws.com/pages/home/banner.jpeg")`,
               backgroundSize: "cover",
               color: (theme) =>
                 theme.palette.getContrastText(theme.palette.primary.main),

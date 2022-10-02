@@ -120,14 +120,14 @@ const Terms = () => {
             <p>
               These Terms of Use constitute a legally binding agreement made
               between you, whether personally or on behalf of an entity (“you”)
-              and Mickey Fitenss, LLC. ("
+              and Cash Homes Today, LLC. ("
               <strong>Company</strong>
               ," “<strong>we</strong>
               ," “<strong>us</strong>
               ," or “<strong>our</strong>
               ”), concerning your access to and use of the{" "}
-              <a href="https://www.mickeyfitness.com">
-                https://www.mickeyfitness.com
+              <a href="https://www.cashhomestoday.com">
+                https://www.cashhomestoday.com
               </a>{" "}
               website as well as any other media form, media channel, mobile
               website or mobile application related, linked, or otherwise
@@ -795,8 +795,8 @@ const Terms = () => {
             <p>
               We care about data privacy and security. Please review our Privacy
               Policy:
-              <a href="https://www.mickeyfitness.com/privacy">
-                https://www.mickeyfitness.com/privacy
+              <a href="https://www.cashhomestoday.com/privacy">
+                https://www.cashhomestoday.com/privacy
               </a>
               . By using the Site, you agree to be bound by our Privacy Policy,
               which is incorporated into these Terms of Use. Please be advised
@@ -1178,7 +1178,7 @@ const Terms = () => {
             <p>
               Cash Homes Today, LLC.
               <br />
-              support@mickeyfitness.com
+              support@cashhomestoday.com
             </p>
           </div>
         </div>
