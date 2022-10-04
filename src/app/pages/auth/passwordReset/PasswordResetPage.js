@@ -52,7 +52,7 @@ const PasswordResetPage = () => {
       )
       .then((user) => {
         console.log(user);
-        navigate("/sign-in");
+        navigate("/future-flipper");
       })
       .catch((_errors) => {
         _errors.forEach((error) => {
@@ -133,7 +133,7 @@ const PasswordResetPage = () => {
               color="text.secondary"
             >
               <span>Return to</span>
-              <Link className="ml-4" to="/sign-in">
+              <Link className="ml-4" to="/future-flipper">
                 sign in
               </Link>
             </Typography>

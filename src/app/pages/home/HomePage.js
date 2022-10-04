@@ -8,6 +8,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FuseSvgIcon from "@fuse/core/FuseSvgIcon";
 import { useSelector } from "react-redux";
 import { selectMainThemeDark } from "app/store/fuse/settingsSlice";
+import Button from "@mui/material/Button";
 import Icons from "../../../@helper/Icons";
 
 const Root = styled(FusePageSimple)(({ theme }) => ({
@@ -59,29 +60,65 @@ const HomePage = (props) => {
                   color="text.secondary"
                   className="mt-12 sm:text-20 text-center tracking-tight"
                 >
-                  Home buying header
+                  WE WANT TO BUY YOUR HOME TODAY!
                 </Typography>
               </motion.div>
               <OutlinedInput
                 component={motion.div}
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1, transition: { delay: 0.2 } }}
-                className="flex flex-1 items-center px-16 mx-8 rounded-full h-44 w-full max-w-320 sm:max-w-480 mt-40 sm:mt-80"
-                placeholder="Enter a coach, topic or keyword"
+                className="flex flex-1 items-center  mx-8 rounded-full h-44 w-full max-w-320 sm:max-w-480 mt-40 sm:mt-80"
+                placeholder="Enter Your Home Address..."
                 variant="outlined"
                 fullWidth
                 startAdornment={
                   <InputAdornment position="start">
-                    <FuseSvgIcon
-                      color="disabled"
-                      icon={Icons.faMagnifyingGlass}
-                    />
+                    <Button color="success">SUBMIT</Button>
                   </InputAdornment>
                 }
                 inputProps={{
-                  "aria-label": "Search",
+                  "aria-label": "Submit",
                 }}
               />
+              <Typography className="mt-16">
+                We’ll give you an offer within 24 hours, just enter your
+                address.
+              </Typography>
+              <div className="flex">
+                <Typography
+                  variant="h6"
+                  className="mx-24 flex items-center mt-36"
+                >
+                  <FuseSvgIcon
+                    color="success"
+                    icon={Icons.faShieldCheck}
+                    className="mr-8"
+                  />
+                  No Closing Costs.
+                </Typography>
+                <Typography
+                  variant="h6"
+                  className="mx-24 flex items-center mt-36"
+                >
+                  <FuseSvgIcon
+                    color="success"
+                    icon={Icons.faShieldCheck}
+                    className="mr-8"
+                  />
+                  No Banks.
+                </Typography>
+                <Typography
+                  variant="h6"
+                  className="mx-24 flex items-center mt-36"
+                >
+                  <FuseSvgIcon
+                    color="success"
+                    icon={Icons.faShieldCheck}
+                    className="mr-8"
+                  />
+                  No Repairs.
+                </Typography>
+              </div>
             </div>
 
             <svg

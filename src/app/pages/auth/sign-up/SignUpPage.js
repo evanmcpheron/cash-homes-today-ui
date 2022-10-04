@@ -108,7 +108,7 @@ const SignUpPage = () => {
           </Typography>
           <div className="flex items-baseline mt-2 font-medium">
             <Typography>Already have an account?</Typography>
-            <Link className="ml-4" to="/sign-in">
+            <Link className="ml-4" to="/future-flipper">
               Sign in
             </Link>
           </div>
@@ -298,27 +298,23 @@ const SignUpPage = () => {
             <div>Welcome to</div>
             <div>Cash Homes Today</div>
           </div>
-          <div className="mt-24 text-lg tracking-tight leading-6 text-gray-400">
-            We're thrilled you're choosing to trust our coaches with your health
-            journey!
-          </div>
           <div className="flex items-center mt-32">
-            <AvatarGroup
-              sx={{
-                "& .MuiAvatar-root": {
-                  borderColor: "primary.main",
-                },
-              }}
-            >
-              <Avatar src="assets/images/avatars/female-18.jpg" />
-              <Avatar src="assets/images/avatars/female-11.jpg" />
-              <Avatar src="assets/images/avatars/male-09.jpg" />
-              <Avatar src="assets/images/avatars/male-16.jpg" />
-            </AvatarGroup>
+            {/* <AvatarGroup */}
+            {/*   sx={{ */}
+            {/*     "& .MuiAvatar-root": { */}
+            {/*       borderColor: "primary.main", */}
+            {/*     }, */}
+            {/*   }} */}
+            {/* > */}
+            {/*   <Avatar src="assets/images/avatars/female-18.jpg" /> */}
+            {/*   <Avatar src="assets/images/avatars/female-11.jpg" /> */}
+            {/*   <Avatar src="assets/images/avatars/male-09.jpg" /> */}
+            {/*   <Avatar src="assets/images/avatars/male-16.jpg" /> */}
+            {/* </AvatarGroup> */}
 
-            <div className="ml-16 font-medium tracking-tight text-gray-400">
-              More than 7k people joined us, it's your turn
-            </div>
+            {/* <div className="ml-16 font-medium tracking-tight text-gray-400"> */}
+            {/*   More than 7k people joined us, it's your turn */}
+            {/* </div> */}
           </div>
         </div>
       </Box>

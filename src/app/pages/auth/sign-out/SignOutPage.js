@@ -1,14 +1,14 @@
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import { useEffect } from 'react';
-import { Navigate } from 'react-router-dom';
-import JwtService from '../../../auth/services/jwtService';
+import Typography from "@mui/material/Typography";
+import Paper from "@mui/material/Paper";
+import { useEffect } from "react";
+import { Navigate } from "react-router-dom";
+import JwtService from "../../../auth/services/jwtService";
 
 function SignOutPage() {
   useEffect(() => {
     setTimeout(() => {
       JwtService.logout();
-      return <Navigate to="/sign-in" />;
+      return <Navigate to="/future-flipper" />;
     }, 1000);
   }, []);
 

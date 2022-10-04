@@ -39,13 +39,13 @@ const ForgotPassword = () => {
   const onSubmit = async ({ email }) => {
     JwtService.forgotPassword(email)
       .then((res) => {
-        navigate("/sign-in");
+        navigate("/future-flipper");
       })
       .catch((_error) => {
         _error.forEach((error) => {
           console.log(error);
         });
-        navigate("/sign-in");
+        navigate("/future-flipper");
       });
   };
 
@@ -107,7 +107,7 @@ const ForgotPassword = () => {
               color="text.secondary"
             >
               <span>Return to</span>
-              <Link className="ml-4" to="/sign-in">
+              <Link className="ml-4" to="/future-flipper">
                 sign in
               </Link>
             </Typography>

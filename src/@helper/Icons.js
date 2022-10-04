@@ -17,6 +17,11 @@ import {
   faMagnifyingGlassDollar,
   faCircleInfo,
   faCreditCard,
+  faDollarSign,
+  faSackDollar,
+  faHouseChimney,
+  faPhone,
+  faShieldCheck,
 } from "@fortawesome/pro-light-svg-icons";
 
 import {
@@ -47,6 +52,11 @@ const Icons = {
   faTwitter,
   faCreditCard,
   faMagnifyingGlassDollar,
+  faDollarSign,
+  faSackDollar,
+  faHouseChimney,
+  faPhone,
+  faShieldCheck,
 };
 
 export default Icons;
