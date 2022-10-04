@@ -29,11 +29,13 @@ const DealCalculator = () => {
   });
 
   function percentage(num, per) {
-    return (num / 100) * per;
+    return Math.round((num / 100) * per);
   }
 
   function formatNumber(number) {
-    const num = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const num = Math.round(number)
+      .toString()
+      .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     return `$${num}`;
   }
 
