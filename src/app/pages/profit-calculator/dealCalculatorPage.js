@@ -123,7 +123,7 @@ const DealCalculator = () => {
   ];
 
   return (
-    <div className="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0">
+    <div className="flex flex-col sm:flex-row md:items-start md:justify-start flex-auto min-w-0">
       <Paper className="h-full sm:h-auto md:flex md:items-center md:justify-end w-full sm:w-auto md:h-full md:w-1/2 py-8 px-16 sm:p-48 md:p-64 sm:rounded-2xl md:rounded-none sm:shadow md:shadow-none ltr:border-r-1 rtl:border-l-1">
         <div className="w-full max-w-320 sm:w-320 mx-auto sm:mx-0">
           <form
@@ -267,7 +267,7 @@ const DealCalculator = () => {
       </Paper>
 
       <Box
-        className="relative hidden md:flex flex-auto items-start justify-center h-full p-64 lg:px-112 overflow-hidden"
+        className="relative md:flex flex-auto items-center justify-center h-full  sm:p-48 md:p-64 lg:px-112 overflow-hidden"
         sx={{ backgroundColor: "primary.main" }}
       >
         <div className=" flex flex-col">
