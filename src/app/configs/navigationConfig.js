@@ -41,6 +41,13 @@ const navigationConfig = [
     url: "/help-center",
   },
   {
+    id: "profit-calculator-component",
+    title: "PROFIT CALCULATOR",
+    type: "item",
+    icon: Icons.faCircleInfo,
+    url: "/profit-calculator",
+  },
+  {
     id: "sign-out-component",
     title: "SIGN OUT",
     type: "item",

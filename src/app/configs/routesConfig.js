@@ -3,6 +3,7 @@ import FuseLoading from "@fuse/core/FuseLoading";
 import { Navigate } from "react-router-dom";
 import settingsConfig from "app/configs/settingsConfig";
 import HomeConfig from "../pages/home/HomeConfig";
+import ProfitCalculatorConfig from "../pages/profit-calculator/profitCalculatorConfig";
 import HelpCenterAppConfig from "../pages/help-center/HelpCenterAppConfig";
 import FileManagerAppConfig from "../pages/file-manager/FileManagerAppConfig";
 import ErrorConfig from "../pages/404/ErrorConfig";
@@ -17,6 +18,7 @@ const routeConfigs = [
   ...LegalConfig,
   ...CoachesConfig,
   HomeConfig,
+  ProfitCalculatorConfig,
   HelpCenterAppConfig,
   FileManagerAppConfig,
   ErrorConfig,
