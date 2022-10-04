@@ -1,16 +1,19 @@
-import { ThemeProvider } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
-import Hidden from '@mui/material/Hidden';
-import Toolbar from '@mui/material/Toolbar';
-import clsx from 'clsx';
-import { memo } from 'react';
-import { useSelector } from 'react-redux';
-import { selectFuseCurrentLayoutConfig, selectToolbarTheme } from 'app/store/fuse/settingsSlice';
-import { selectFuseNavbar } from 'app/store/fuse/navbarSlice';
-import DarkModeToggle from '../../shared-components/DarkModeToggle';
-import FullScreenToggle from '../../shared-components/FullScreenToggle';
-import NavbarToggleButton from '../../shared-components/NavbarToggleButton';
-import UserMenu from '../../shared-components/UserMenu';
+import { ThemeProvider } from "@mui/material/styles";
+import AppBar from "@mui/material/AppBar";
+import Hidden from "@mui/material/Hidden";
+import Toolbar from "@mui/material/Toolbar";
+import clsx from "clsx";
+import { memo } from "react";
+import { useSelector } from "react-redux";
+import {
+  selectFuseCurrentLayoutConfig,
+  selectToolbarTheme,
+} from "app/store/fuse/settingsSlice";
+import { selectFuseNavbar } from "app/store/fuse/navbarSlice";
+import DarkModeToggle from "../../shared-components/DarkModeToggle";
+import FullScreenToggle from "../../shared-components/FullScreenToggle";
+import NavbarToggleButton from "../../shared-components/NavbarToggleButton";
+import UserMenu from "../../shared-components/UserMenu";
 
 function ToolbarMenu(props) {
   const config = useSelector(selectFuseCurrentLayoutConfig);
@@ -21,11 +24,11 @@ function ToolbarMenu(props) {
     <ThemeProvider theme={toolbarTheme}>
       <AppBar
         id="fuse-toolbar"
-        className={clsx('flex relative z-20 shadow-md', props.className)}
+        className={clsx("flex relative z-20 shadow-md", props.className)}
         color="default"
         sx={{
           backgroundColor: (theme) =>
-            theme.palette.mode === 'light'
+            theme.palette.mode === "light"
               ? toolbarTheme.palette.background.paper
               : toolbarTheme.palette.background.default,
         }}
@@ -34,10 +37,10 @@ function ToolbarMenu(props) {
         <Toolbar className="p-0 min-h-48 md:min-h-64">
           <div className="flex flex-1 px-16">
             <Hidden lgDown>
-              {config.navbar.style === 'style' && !navbar.open && (
+              {config.navbar.style === "style" && !navbar.open && (
                 <NavbarToggleButton className="w-40 h-40 p-0 mx-0" />
               )}
-            </Hidden>{' '}
+            </Hidden>{" "}
             <Hidden lgUp>
               <NavbarToggleButton className="w-40 h-40 p-0 mx-0 sm:mx-8" />
             </Hidden>
@@ -74,7 +77,7 @@ function ToolbarMenu(props) {
               <NotificationPanelToggleButton />
             </Hidden> */}
 
-            <UserMenu />
+            {/* <UserMenu /> */}
           </div>
         </Toolbar>
       </AppBar>

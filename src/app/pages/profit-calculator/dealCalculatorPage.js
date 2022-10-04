@@ -8,6 +8,7 @@ import {
   Table,
   TableBody,
   TableRow,
+  Typography,
 } from "@mui/material";
 import { useState } from "react";
 
@@ -125,13 +126,16 @@ const DealCalculator = () => {
   ];
 
   return (
-    <div className="flex flex-col sm:flex-row md:items-start md:justify-start flex-auto min-w-0">
-      <Paper className="h-full sm:h-auto md:flex md:items-center md:justify-end w-full sm:w-auto md:h-full md:w-1/2 py-8 px-16 sm:p-48 md:p-64 sm:rounded-2xl md:rounded-none sm:shadow md:shadow-none ltr:border-r-1 rtl:border-l-1">
-        <div className="w-full max-w-320 sm:w-320 mx-auto sm:mx-0">
+    <div className=" flex flex-col items-center">
+      <Typography variant="h3" className="my-36 px-36">
+        DEAL CALCULATOR
+      </Typography>
+      <div className="w-full max-w-lg p-36 pt-0">
+        <div className="w-full">
           <form
             name="registerForm"
             noValidate
-            className="flex flex-col justify-center w-full mt-32"
+            className="flex flex-col w-full justify-center w-full mt-32"
           >
             <TextField
               className="mb-24"
@@ -266,19 +270,19 @@ const DealCalculator = () => {
             />
           </form>
         </div>
-      </Paper>
+      </div>
 
       <Box
-        className="relative md:flex flex-auto items-center justify-center h-full  sm:p-48 md:p-64 lg:px-112 overflow-hidden"
         sx={{ backgroundColor: "primary.main" }}
+        className="w-full  mt-36 p-36  flex justify-center"
       >
-        <div className=" flex flex-col">
-          <TableContainer component={Paper}>
+        <div className="max-w-lg w-full">
+          <TableContainer component={Paper} className=" w-full">
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
-                  <TableCell align="left">Key</TableCell>
-                  <TableCell align="right">Value</TableCell>
+                  <TableCell>Key</TableCell>
+                  <TableCell>Value</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -290,7 +294,7 @@ const DealCalculator = () => {
                     <TableCell component="th" scope="row">
                       {row.key}
                     </TableCell>
-                    <TableCell align="right">{row.value}</TableCell>
+                    <TableCell>{row.value}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
