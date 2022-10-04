@@ -59,8 +59,7 @@ const HomePage = (props) => {
                   color="text.secondary"
                   className="mt-12 sm:text-20 text-center tracking-tight"
                 >
-                  Explore a healthier you by searching for coaches from
-                  nutrition, yoga, weight training and more!
+                  Home buying header
                 </Typography>
               </motion.div>
               <OutlinedInput
