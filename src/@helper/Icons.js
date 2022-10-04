@@ -14,11 +14,16 @@ import {
   faRightFromBracket,
   faHome,
   faCloud,
+  faMagnifyingGlassDollar,
   faCircleInfo,
   faCreditCard,
-} from '@fortawesome/pro-light-svg-icons';
+} from "@fortawesome/pro-light-svg-icons";
 
-import { faFacebookF, faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebookF,
+  faGoogle,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Icons = {
   faSun,
@@ -41,6 +46,7 @@ const Icons = {
   faGoogle,
   faTwitter,
   faCreditCard,
+  faMagnifyingGlassDollar,
 };
 
 export default Icons;

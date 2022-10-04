@@ -1,4 +1,3 @@
-import { s3Proxy } from "@helper/proxy";
 import {
   TextField,
   Paper,
@@ -12,7 +11,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 
-const ProfitCalculator = () => {
+const DealCalculator = () => {
   const [formData, setFormData] = useState({
     arv: 250000,
     minProfit: 20000,
@@ -271,7 +270,7 @@ const ProfitCalculator = () => {
         className="relative hidden md:flex flex-auto items-start justify-center h-full p-64 lg:px-112 overflow-hidden"
         sx={{ backgroundColor: "primary.main" }}
       >
-        <div className="fixed flex flex-col">
+        <div className=" flex flex-col">
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
@@ -301,4 +300,4 @@ const ProfitCalculator = () => {
   );
 };
 
-export default ProfitCalculator;
+export default DealCalculator;
