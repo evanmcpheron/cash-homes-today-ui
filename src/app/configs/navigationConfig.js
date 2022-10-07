@@ -69,7 +69,7 @@ const navigationConfig = [
     type: "item",
     // auth: authRoles.user,
     icon: Icons.faHouseChimney,
-    url: "/deal-tracker",
+    url: "/apps/scrumboard",
   },
   {
     id: "contact-component",

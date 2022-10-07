@@ -11,6 +11,7 @@ import CoachesConfig from "../pages/coaches/CoachesConfig";
 import AuthConfig from "../pages/auth/AuthConfig";
 import ProfileConfig from "../pages/profile/ProfileConfig";
 import LegalConfig from "../pages/legal/LegalConfig";
+import DealTrackerConfig from "../pages/deal-tracker/ScrumboardAppConfig";
 
 const routeConfigs = [
   ...AuthConfig,
@@ -19,6 +20,7 @@ const routeConfigs = [
   ...CoachesConfig,
   HomeConfig,
   DealCalculatorConfig,
+  DealTrackerConfig,
   HelpCenterAppConfig,
   FileManagerAppConfig,
   ErrorConfig,
