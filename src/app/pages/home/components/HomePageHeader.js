@@ -7,6 +7,7 @@ import {
   ThemeProvider,
   Button,
   Box,
+  Paper,
   Modal,
 } from "@mui/material";
 import FuseSvgIcon from "@fuse/core/FuseSvgIcon";
@@ -16,6 +17,7 @@ import Icons from "@helper/Icons";
 
 const HomePageHeader = () => {
   const [address, setAddress] = useState("");
+  const [open, setOpen] = useState(false);
   const mainThemeDark = useSelector(selectMainThemeDark);
   useEffect(() => {
     // eslint-disable-next-line no-undef
@@ -45,8 +47,35 @@ const HomePageHeader = () => {
     setAddress(autocomplete.value);
   };
 
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 400,
+    bgcolor: "background.paper",
+    border: "2px solid #000",
+    boxShadow: 24,
+    p: 4,
+  };
+
   return (
     <ThemeProvider theme={mainThemeDark}>
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Paper sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Text in a modal
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            {address}
+          </Typography>
+        </Paper>
+      </Modal>
       <Box
         className="relative pt-32 pb-112 px-16 sm:pt-80 sm:pb-192 sm:px-64 overflow-hidden"
         sx={{
@@ -84,17 +113,28 @@ const HomePageHeader = () => {
             component={motion.div}
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1, transition: { delay: 0.2 } }}
-            className="flex flex-1 items-center  mx-8 rounded-full h-44 w-full max-w-320 sm:max-w-480 mt-40 sm:mt-80 input-field"
+            className="flex flex-1 items-center  mx-8 rounded-full h-44 w-full max-w-5xl mt-40 sm:mt-80 input-field"
             id="autocomplete"
             placeholder="Enter Your Home Address..."
             variant="outlined"
+            sx={{ fontSize: 25 }}
             value={address}
             onChange={(e) => handleChange(e)}
             fullWidth
             startAdornment={
-              <InputAdornment position="start">
-                <Button color="success">SUBMIT</Button>
-              </InputAdornment>
+              <Button
+                sx={{
+                  fontSize: 25,
+                  marginRight: 3,
+                  padding: 3,
+                  borderRadius: 20,
+                }}
+                variant="outlined"
+                color="success"
+                onClick={() => setOpen(true)}
+              >
+                SUBMIT
+              </Button>
             }
             inputProps={{
               "aria-label": "Submit",
@@ -103,7 +143,7 @@ const HomePageHeader = () => {
           <Typography className="mt-16">
             We’ll give you an offer within 24 hours, just enter your address.
           </Typography>
-          <div className="flex">
+          <div className="flex mt-40">
             <Typography variant="h6" className="mx-24 flex items-center mt-36">
               <FuseSvgIcon
                 color="success"
